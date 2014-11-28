@@ -1,10 +1,10 @@
 from pecan import expose, redirect
 from pecan.rest import RestController
 
-class V2TokensController(RestController):
-    
+class TokensController(RestController):
+
     @expose('json', content_type='application/json')
-    def post(self, data):
+    def post(self):
         return {
             "access": {
                 "token": {
