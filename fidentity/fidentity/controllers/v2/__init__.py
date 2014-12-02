@@ -3,6 +3,7 @@ from pecan.rest import RestController
 
 import tenants
 import tokens
+import extensions
 
 class V2Controller(RestController):
 
@@ -32,13 +33,6 @@ class V2Controller(RestController):
             }
         }
 
-    @expose()
-    def _lookup(self, endpoint, *remainder):
-        if endpoint == "extensions": 
-            return V2ExtensionsController(), remainder
-        elif endpoint == "tokens":
-            return tokens.TokensController(), remainder
-        elif endpoint == "tenants":
-            return tenants.TenantsController(), remainder
-        else:
-            abort(404)
+    tokens = tokens.TokensController()
+    extensions = extensions.ExtensionsController()
+    tenants = tenants.TenantsController()

@@ -68,3 +68,7 @@ class RootController(RestController):
             return v2.V2Controller(), remainder
         else:
             abort(404)
+
+class AdminRootController(RootController):
+    # Do something to signify that its the admin endpoint 
+    pass 

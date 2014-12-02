@@ -1,15 +1,15 @@
 # Server Specific Configurations
 server = {
-    'port': '9696',
+    'port': '35357',
     'host': '0.0.0.0'
 }
 
 # Pecan Application Configurations
 app = {
-    'root': 'fnetworking.controllers.root.RootController',
-    'modules': ['fnetworking'],
+    'root': 'fidentity.controllers.root.RootController',
+    'modules': ['fidentity'],
     'static_root': '%(confdir)s/public',
-    'template_path': '%(confdir)s/fnetworking/templates',
+    'template_path': '%(confdir)s/fidentity/templates',
     'debug': True,
     'errors': {
         404: '/error/404',
@@ -20,7 +20,7 @@ app = {
 logging = {
     'root': {'level': 'INFO', 'handlers': ['console']},
     'loggers': {
-        'fnetworking': {'level': 'DEBUG', 'handlers': ['console']},
+        'fidentity': {'level': 'DEBUG', 'handlers': ['console']},
         'pecan.commands.serve': {'level': 'DEBUG', 'handlers': ['console']},
         'py.warnings': {'handlers': ['console']},
         '__force_dict__': True

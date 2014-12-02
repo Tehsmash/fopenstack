@@ -22,11 +22,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+                                "adminURL": "http://localhost:8774/v2/fc394f2ab2df4114bde39905f800dc57",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+                                "internalURL": "http://localhost:8774/v2/fc394f2ab2df4114bde39905f800dc57",
                                 "id": "2dad48f09e2a447a9bf852bcd93548ef",
-                                "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"
+                                "publicURL": "http://localhost:8774/v2/fc394f2ab2df4114bde39905f800dc57"
                             }
                         ],
                         "endpoints_links": [],
@@ -36,11 +36,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:9696/",
+                                "adminURL": "http://localhost:9696/",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:9696/",
+                                "internalURL": "http://localhost:9696/",
                                 "id": "97c526db8d7a4c88bbb8d68db1bdcdb8",
-                                "publicURL": "http://23.253.72.207:9696/"
+                                "publicURL": "http://localhost:9696/"
                             }
                         ],
                         "endpoints_links": [],
@@ -50,11 +50,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+                                "adminURL": "http://localhost:8776/v2/fc394f2ab2df4114bde39905f800dc57",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+                                "internalURL": "http://localhost:8776/v2/fc394f2ab2df4114bde39905f800dc57",
                                 "id": "93f86dfcbba143a39a33d0c2cd424870",
-                                "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"
+                                "publicURL": "http://localhost:8776/v2/fc394f2ab2df4114bde39905f800dc57"
                             }
                         ],
                         "endpoints_links": [],
@@ -64,11 +64,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8774/v3",
+                                "adminURL": "http://localhost:8774/v3",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8774/v3",
+                                "internalURL": "http://localhost:8774/v3",
                                 "id": "3eb274b12b1d47b2abc536038d87339e",
-                                "publicURL": "http://23.253.72.207:8774/v3"
+                                "publicURL": "http://localhost:8774/v3"
                             }
                         ],
                         "endpoints_links": [],
@@ -78,11 +78,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:3333",
+                                "adminURL": "http://localhost:3333",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:3333",
+                                "internalURL": "http://localhost:3333",
                                 "id": "957f1e54afc64d33a62099faa5e980a2",
-                                "publicURL": "http://23.253.72.207:3333"
+                                "publicURL": "http://localhost:3333"
                             }
                         ],
                         "endpoints_links": [],
@@ -92,11 +92,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:9292",
+                                "adminURL": "http://localhost:9292",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:9292",
+                                "internalURL": "http://localhost:9292",
                                 "id": "27d5749f36864c7d96bebf84a5ec9767",
-                                "publicURL": "http://23.253.72.207:9292"
+                                "publicURL": "http://localhost:9292"
                             }
                         ],
                         "endpoints_links": [],
@@ -106,11 +106,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+                                "adminURL": "http://localhost:8776/v1/fc394f2ab2df4114bde39905f800dc57",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+                                "internalURL": "http://localhost:8776/v1/fc394f2ab2df4114bde39905f800dc57",
                                 "id": "37c83a2157f944f1972e74658aa0b139",
-                                "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"
+                                "publicURL": "http://localhost:8776/v1/fc394f2ab2df4114bde39905f800dc57"
                             }
                         ],
                         "endpoints_links": [],
@@ -120,11 +120,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8773/services/Admin",
+                                "adminURL": "http://localhost:8773/services/Admin",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8773/services/Cloud",
+                                "internalURL": "http://localhost:8773/services/Cloud",
                                 "id": "289b59289d6048e2912b327e5d3240ca",
-                                "publicURL": "http://23.253.72.207:8773/services/Cloud"
+                                "publicURL": "http://localhost:8773/services/Cloud"
                             }
                         ],
                         "endpoints_links": [],
@@ -134,11 +134,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:8080",
+                                "adminURL": "http://localhost:8080",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+                                "internalURL": "http://localhost:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
                                 "id": "16b76b5e5b7d48039a6e4cc3129545f3",
-                                "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"
+                                "publicURL": "http://localhost:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"
                             }
                         ],
                         "endpoints_links": [],
@@ -148,11 +148,11 @@ class TokensController(RestController):
                     {
                         "endpoints": [
                             {
-                                "adminURL": "http://23.253.72.207:35357/v2.0",
+                                "adminURL": "http://localhost:35357/v2.0",
                                 "region": "RegionOne",
-                                "internalURL": "http://23.253.72.207:5000/v2.0",
+                                "internalURL": "http://localhost:5000/v2.0",
                                 "id": "26af053673df4ef3a2340c4239e21ea2",
-                                "publicURL": "http://23.253.72.207:5000/v2.0"
+                                "publicURL": "http://localhost:5000/v2.0"
                             }
                         ],
                         "endpoints_links": [],
