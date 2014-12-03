@@ -14,3 +14,10 @@ pushd ./fcompute
 screen -S fcompute -dm pecan serve config.py
 
 popd
+
+# FNetworking
+pushd ./fnetworking
+
+screen -S fnetworking -dm pecan serve config.py
+
+popd

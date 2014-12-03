@@ -1,6 +1,11 @@
 from pecan import expose, redirect
 from pecan.rest import RestController
 
+import datetime
+
+dt = datetime.datetime.now()
+dtlater = datetime.datetime(datetime.MAXYEAR, 1, 1) 
+
 class TokensController(RestController):
 
     @expose('json', content_type='application/json')
@@ -8,8 +13,8 @@ class TokensController(RestController):
         return {
             "access": {
                 "token": {
-                    "issued_at": "2014-01-30T15:30:58.819584",
-                    "expires": "2014-01-31T15:30:58Z",
+                    "issued_at": dt.isoformat(),
+                    "expires": dtlater.isoformat(),
                     "id": "aaaaa-bbbbb-ccccc-dddd",
                     "tenant": {
                         "description": None,

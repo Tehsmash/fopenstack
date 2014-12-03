@@ -1,22 +1,31 @@
-from pecan import expose, redirect
+from pecan import expose, redirect, abort
+from pecan.rest import RestController
 from webob.exc import status_map
 
+import v2
 
-class RootController(object):
+class RootController(RestController):
 
-    @expose(generic=True, template='index.html')
-    def index(self):
-        return dict()
+    @expose('json', content_type='application/json')
+    def get(self):
+        return{
+            "versions": [
+                {
+                    "status": "CURRENT",
+                    "id": "v2.0",
+                    "links": [
+                        {
+                            "href": "http://localhost:9696/v2.0",
+                            "rel": "self"
+                        }
+                    ]
+                }
+            ]
+        } 
 
-    @index.when(method='POST')
-    def index_post(self, q):
-        redirect('http://pecan.readthedocs.org/en/latest/search.html?q=%s' % q)
-
-    @expose('error.html')
-    def error(self, status):
-        try:
-            status = int(status)
-        except ValueError:  # pragma: no cover
-            status = 500
-        message = getattr(status_map.get(status), 'explanation', '')
-        return dict(status=status, message=message)
+    @expose()
+    def _lookup(self, version, *remainder):
+        if version == "v2.0": 
+            return v2.Controller(), remainder
+        else:
+            abort(404)

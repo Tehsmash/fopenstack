@@ -8,3 +8,6 @@ screen -X -S fcompute quit
 
 echo "Kill Fidentity"
 screen -X -S fidentity quit
+
+echo "Kill Fnetworking"
+screen -X -S fnetworking quit
