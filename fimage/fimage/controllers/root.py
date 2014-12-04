@@ -1,22 +1,66 @@
 from pecan import expose, redirect
+from pecan.rest import RestController
 from webob.exc import status_map
 
+import v2
 
-class RootController(object):
+class RootController(RestController):
 
-    @expose(generic=True, template='index.html')
-    def index(self):
-        return dict()
+    @expose('json', content_type='application/json')
+    def get(self):
+        return {
+            "versions": [
+                {
+                    "status": "CURRENT",
+                    "id": "v2.2",
+                    "links": [
+                        {
+                            "href": "http://23.253.228.211:9292/v2/",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                {
+                    "status": "SUPPORTED",
+                    "id": "v2.1",
+                    "links": [
+                        {
+                            "href": "http://23.253.228.211:9292/v2/",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                {
+                    "status": "SUPPORTED",
+                    "id": "v2.0",
+                    "links": [
+                        {
+                            "href": "http://23.253.228.211:9292/v2/",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                {
+                    "status": "CURRENT",
+                    "id": "v1.1",
+                    "links": [
+                        {
+                            "href": "http://23.253.228.211:9292/v1/",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                {
+                    "status": "SUPPORTED",
+                    "id": "v1.0",
+                    "links": [
+                        {
+                            "href": "http://23.253.228.211:9292/v1/",
+                            "rel": "self"
+                        }
+                    ]
+                }
+            ]
+        }
 
-    @index.when(method='POST')
-    def index_post(self, q):
-        redirect('http://pecan.readthedocs.org/en/latest/search.html?q=%s' % q)
-
-    @expose('error.html')
-    def error(self, status):
-        try:
-            status = int(status)
-        except ValueError:  # pragma: no cover
-            status = 500
-        message = getattr(status_map.get(status), 'explanation', '')
-        return dict(status=status, message=message)
+    v2 = v2.Controller()
