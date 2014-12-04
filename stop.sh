@@ -11,3 +11,6 @@ screen -X -S fidentity quit
 
 echo "Kill Fnetworking"
 screen -X -S fnetworking quit
+
+echo "Kill Fimage"
+screen -X -S fimage quit

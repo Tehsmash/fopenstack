@@ -21,3 +21,10 @@ pushd ./fnetworking
 screen -S fnetworking -dm pecan serve config.py
 
 popd
+
+# FImage
+pushd ./fimage
+
+screen -S fimage -dm pecan serve config.py
+
+popd
