@@ -3,6 +3,7 @@ from pecan.rest import RestController
 from webob.exc import status_map
 
 import v2
+import v1
 
 class RootController(RestController):
 
@@ -64,3 +65,4 @@ class RootController(RestController):
         }
 
     v2 = v2.Controller()
+    v1 = v1.Controller()

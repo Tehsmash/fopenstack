@@ -180,7 +180,7 @@ class TokensController(RestController):
                     "name": "demo"
                 },
                 "metadata": {
-                    "is_admin": 0,
+                    "is_admin": 1,
                     "roles": [
                         "7598ac3c634d4c3da4b9126a5f67ca2b",
                         "f95c0ab82d6045d9805033ee1fbc80d4"
