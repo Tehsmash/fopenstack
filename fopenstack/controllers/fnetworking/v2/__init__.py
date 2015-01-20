@@ -6,6 +6,7 @@ import subnets
 import ports
 import routers
 import floatingips
+import securitygroups
 import extensions
 
 class Controller(RestController):
@@ -53,3 +54,8 @@ class Controller(RestController):
                 }
             ]
         }
+
+    @expose()
+    def _lookup(self, path, *remainder):
+        if path == "security-groups":
+            return securitygroups.Controller(), remainder

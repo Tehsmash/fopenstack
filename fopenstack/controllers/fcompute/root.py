@@ -1,8 +1,12 @@
 from pecan import expose, redirect
 from pecan.rest import RestController
 from webob.exc import status_map
+import logging
 
 import v2
+
+logger = logging.getLogger(__name__)
+
 
 class RootController(RestController):
 

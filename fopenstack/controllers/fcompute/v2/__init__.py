@@ -54,3 +54,10 @@ class V2Controller(RestController):
     @expose('json', content_type='application/json')
     def get_one(self, project_id):
         abort(404)
+
+    @expose('json', content_type='application/json')
+    def _lookup(self, project_id, name, *remainder):
+        for extension in extensions.EXTENSION_CONTROLLERS:
+            if extension == name:
+                return extensions.EXTENSION_CONTROLLERS[extension](), remainder
+        abort(404)

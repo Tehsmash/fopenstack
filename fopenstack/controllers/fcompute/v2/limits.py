@@ -18,7 +18,13 @@ class Controller(RestController):
                     "maxTotalFloatingIps": 10,
                     "maxTotalInstances": 10,
                     "maxTotalKeypairs": 100,
-                    "maxTotalRAMSize": 51200
+                    "maxTotalRAMSize": 51200,
+                    "totalCoresUsed": 0,
+                    "totalInstancesUsed": 0,
+                    "totalRAMUsed": 0,
+                    "totalSecurityGroupsUsed": 0,
+                    "totalFloatingIpsUsed": 0,
+                    "totalServerGroupsUsed": 0
                 },
                 "rate": [
                     {

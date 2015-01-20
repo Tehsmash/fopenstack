@@ -27,5 +27,3 @@ class RootController(RestController):
     def _lookup(self, version, *remainder):
         if version == "v2.0": 
             return v2.Controller(), remainder
-        else:
-            abort(404)

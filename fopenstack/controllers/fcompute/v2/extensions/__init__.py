@@ -669,7 +669,14 @@ EXTENSIONS = {
         }
     ]
 }
- 
+
+import simple_tenant_usage
+import floating_ips
+
+EXTENSION_CONTROLLERS = {
+        'os-simple-tenant-usage': simple_tenant_usage.Controller,
+        'os-floating-ips': floating_ips.Controller
+}
 
 class Controller(RestController):
 
